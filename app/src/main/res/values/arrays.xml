@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="sketch_colors">
+        <item>#000000</item>
+        <item>#ffffff</item>
+        <item>#1a1334</item>
+        <item>#26294a</item>
+        <item>#01545a</item>
+        <item>#017351</item>
+        <item>#03c383</item>
+        <item>#aad962</item>
+        <item>#fbbf45</item>
+        <item>#ef6a32</item>
+        <item>#ed0345</item>
+        <item>#a12a5e</item>
+        <item>#710162</item>
+        <item>#110141</item>
+    </array>
+    <array name="sketch_sticks">
+        <item>@drawable/furniture_1</item>
+        <item>@drawable/furniture_2</item>
+        <item>@drawable/furniture_3</item>
+        <item>@drawable/furniture_4</item>
+        <item>@drawable/furniture_5</item>
+        <item>@drawable/furniture_6</item>
+        <item>@drawable/furniture_7</item>
+        <item>@drawable/furniture_8</item>
+        <item>@drawable/furniture_9</item>
+        <item>@drawable/furniture_10</item>
+        <item>@drawable/furniture_11</item>
+        <item>@drawable/furniture_12</item>
+        <item>@drawable/furniture_13</item>
+        <item>@drawable/furniture_14</item>
+    </array>
+</resources>

@@ -1,0 +1,7 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="margin_yezi">12dp</dimen>
+    <dimen name="margin_micro">4dp</dimen>
+    <dimen name="button">32dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+</resources>

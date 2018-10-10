@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="line_border_size">2dp</dimen>
+    <dimen name="ignore_point_size">2dp</dimen>
+    <dimen name="scale_rotate_border_area">10dp</dimen>
+</resources>

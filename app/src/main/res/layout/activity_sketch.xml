@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:ignore="contentDescription">
+    <com.facebook.drawee.view.SimpleDraweeView
+        xmlns:fresco="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        fresco:placeholderImage="@drawable/test"/>
+    <com.qunhe.sketch.SketchBoardLayout
+        android:id="@+id/sketch_board"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <RelativeLayout
+        android:id="@+id/sketch_action_panel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ViewStub
+            android:id="@+id/edit_stub"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout="@layout/sketch_text_stub" />
+        <LinearLayout
+            android:id="@+id/top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_yezi"
+            android:layout_marginRight="@dimen/margin_yezi"
+            android:layout_marginTop="@dimen/margin_yezi"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+            <ImageView
+                android:id="@+id/undo"
+                style="@style/sketch_type_button"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:src="@drawable/sketch_undo_2" />
+            <ImageView
+                android:id="@+id/delete"
+                style="@style/sketch_type_button"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:src="@drawable/sketch_delete" />
+            <ImageView
+                android:id="@+id/save"
+                style="@style/sketch_type_button"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:src="@drawable/sketch_save" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+            <ViewStub
+                android:id="@+id/color_pick_stub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout="@layout/sketch_color_pick_layout" />
+            <ViewStub
+                android:id="@+id/stick_pick_stub"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout="@layout/sketch_stick_pick_layout" />
+            <LinearLayout
+                android:id="@+id/sketch_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#dd333333"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_small">
+                <android.support.v4.widget.Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+                <ImageView
+                    android:id="@+id/type_free_style"
+                    style="@style/sketch_type_button"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:src="@drawable/sketch_type_freestyle" />
+                <android.support.v4.widget.Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+                <ImageView
+                    android:id="@+id/type_text"
+                    style="@style/sketch_type_button"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:src="@drawable/sketch_type_text" />
+                <android.support.v4.widget.Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+                <ImageView
+                    android:id="@+id/type_stick"
+                    style="@style/sketch_type_button"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:src="@drawable/sketch_type_stick" />
+                <android.support.v4.widget.Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
