@@ -4,10 +4,10 @@
 
 ### Demo
 <div class='row'>
-    <img src='http://7xq276.com2.z0.glb.qiniucdn.com/keyboard-demo.gif' width="250px"/>
+    <img src='http://cdn.flowergo.xyz/doodle.gif' width="250px"/>
 </div>
 
-[Demo Download](http://7xq276.com2.z0.glb.qiniucdn.com/keyboard_new.apk)
+[Demo Download](http://cdn.flowergo.xyz/android_doodle.apk)
 
 ### import
 
